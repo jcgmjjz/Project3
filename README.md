@@ -1,2 +1,2 @@
-# Project1
-ITMD-361 Summer Project1
+# Project2
+ITMD-361 Summer Project2
