@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Gary Zabinski, Senior Software Engineer</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
   </head>
-  <body>
+  <body id="index">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -12,10 +15,12 @@
         <li><a href="nationalParksVisited.html">National Parks Visited</a></li>
       </ul>
     </nav>
-    <h1>Gary Zabinski, Senior Software Engineer</h1>
-    <img src="media/IMG_3887GJZPersonalPhotoRotated.jpg" width="150" height="200" alt="Gary Zabinski Portrait">
-    <h2>Professional</h2>
-    <p>Although I have an advanced degree in Electrical Engineering, I have been working
+    <h1 id="name">Gary Zabinski</h1>
+    <h1 id="profession">Senior Software Engineer</h1>
+    <div id="wrap-around">
+    <img id="picture" src="media/IMG_3887GJZPersonalPhotoRotated.jpg" width="150" height="200" alt="Gary Zabinski Portrait">
+    <h2 id="professional">Professional:</h2>
+    <p id="first-paragraph">Although I have an advanced degree in Electrical Engineering, I have been working
     as a computer engineer for most of my career. In that capacity I have acquired
     skills in the following areas:</p>
     <ul>
@@ -62,8 +67,9 @@
     technology I am currently updating my skills to include
     web development (both front end and back end). This link to my
     <a href="resume.html">resume</a> describes my professional experience.</p>
-    <h2>Personal</h2>
+    <h2 id="personal">Personal:</h2>
     <p>I enjoy camping, hiking and rock climbing. A list of the national parks I have visited with
     some of my favorite hikes is included <a href="nationalParksVisited.html">here</a>.</p>
+    </div>
   </body>
 </html>
