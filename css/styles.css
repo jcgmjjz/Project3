@@ -32,18 +32,6 @@ nav ul li a {
   font-family: Arial, sans-serif;
 }
 
-@media all and (max-width: 699px) and (min-width: 520px) {
-nav ul li a {
-  display: block;
-  padding: 0.375em; 
-  font-size: 1em;
-  color: red;
-  text-decoration: none;
-  /*font-weight: bold;*/
-  text-transform: uppercase;
-  font-family: Arial, sans-serif;
-}
-}
 nav ul li a:hover {
   background-color: #ccc;
   color: #000;
