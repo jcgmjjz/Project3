@@ -58,7 +58,8 @@ nav ul li a:hover {
  *                index                             *
  ****************************************************/
 body#index {
-  background-color: #f4f4d7;
+  /*background-color: #f4f4d7;*/
+  background-color: #afc983;
 }
 img#picture {
   float: left;
@@ -126,7 +127,9 @@ div#wrap-around ul {
  *                resume                            *
  ****************************************************/
 #resume-body {
-  background-color: #f4f4d7;
+  background-color: #b6cee2;
+  /*background-color: #afc983;*/
+  /*background-color: #f4f4d7;*/
 }
 
 div#personal-resume {
@@ -186,11 +189,13 @@ div#career-summary ul li {
 }
 
 .odd {
-  background-color: #e4e49b;
+  background-color: #c8daea;
+  /*background-color: #e4e49b;*/
 }
 
 .even {
-  background-color: #efefc3;
+  background-color: #edf3f8;
+  /*background-color: #efefc3;*/
 }
 
 div#work-experience h2 {
