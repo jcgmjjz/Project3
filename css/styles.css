@@ -68,20 +68,20 @@ img#picture {
 
 h1#name {
   text-align: center;
-  max-width: 960px;
+  /*max-width: 960px;*/
   font-family: 'Neuton', serif;
   font-size: 250%;
   margin-bottom: -0.8em;
 }
 h1#profession {
   text-align: center;
-  max-width: 960px;
+  /*max-width: 960px;*/
   font-family: 'Neuton', serif;
   font-size: 250%;
 }
 
 div#wrap-around {
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin-left: 0.625em;
   font-family: 'Neuton', serif;
   font-size: 150%;
