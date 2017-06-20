@@ -121,6 +121,18 @@ div#wrap-around ul {
   }
 }
 
+img#picture2 {
+  clear: both;
+  float: right;
+  /*margin-right: 1.25em;*/
+  margin-bottom: 1.25em;
+}
+
+img#picture3 {
+  clear: both;
+  float: right;
+  /*margin-right: 1.25em;*/
+}
 
 
 /****************************************************
