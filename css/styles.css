@@ -32,19 +32,18 @@ nav ul li a {
   font-family: Arial, sans-serif;
 }
 
-/* Remove */
+/* Used as a diagnostic to find specifc px locations 
 @media all and (max-width: 630px) and (min-width: 520px) {
-nav ul li a {
-  display: block;
+  nav ul li a {
+    display: block;
     padding: 0.375em;
-      font-size: 1em;
-        color: red;
-          text-decoration: none;
-            /*font-weight: bold;*/
-              text-transform: uppercase;
-                font-family: Arial, sans-serif;
-                }
-                }
+    font-size: 1em;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+  }
+} */
 
 
 nav ul li a:hover {
