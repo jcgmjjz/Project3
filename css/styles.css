@@ -32,6 +32,21 @@ nav ul li a {
   font-family: Arial, sans-serif;
 }
 
+/* Remove */
+@media all and (max-width: 630px) and (min-width: 520px) {
+nav ul li a {
+  display: block;
+    padding: 0.375em;
+      font-size: 1em;
+        color: red;
+          text-decoration: none;
+            /*font-weight: bold;*/
+              text-transform: uppercase;
+                font-family: Arial, sans-serif;
+                }
+                }
+
+
 nav ul li a:hover {
   background-color: #ccc;
   color: #000;
@@ -55,41 +70,37 @@ h1#name {
   text-align: center;
   max-width: 960px;
   font-family: 'Neuton', serif;
-  font-size: 40px;
+  font-size: 250%;
   margin-bottom: -0.8em;
 }
 h1#profession {
   text-align: center;
   max-width: 960px;
   font-family: 'Neuton', serif;
-  font-size: 40px;
+  font-size: 250%;
+}
+
+div#wrap-around {
+  max-width: 960px;
+  margin-left: 0.625em;
+  font-family: 'Neuton', serif;
+  font-size: 150%;
+  width: 82%; 
 }
 h2#professional {
   text-align: left;
-  max-width: 960px;
-  font-family: 'Neuton', serif;
-  font-size: 30px;
+  font-size: 125%;
   margin-bottom: -0.625em;
 }
 
 h2#personal {
   text-align: left;
-  max-width: 960px;
-  font-family: 'Neuton', serif;
-  font-size: 30px;
+  font-size: 125%;
   margin-bottom: -0.625em;
 }
   
-div#wrap-around {
-  max-width: 960px;
-  margin-left: 0.625em;
-  font-family: 'Neuton', serif;
-  font-size: 25px;
-  width: 82%; 
-}
-
 div#wrap-around ul {
-  margin-left: 10em;
+  margin-left: 1em;
   list-style-type: square;
 }
 
@@ -98,17 +109,15 @@ div#wrap-around ul {
  * This helps keep the bullet list more readable with small screens.
  * Move it even further to the left when the screen gets even smaller.
  */
-@media all and (max-width: 699px) and (min-width: 520px) {
+@media all and (max-width: 630px) and (min-width: 520px) {
   div#wrap-around ul {
     margin-left: 3em;
-    list-style-type: square;
   }
 }
 
-@media all and (max-width: 521px) and (min-width: 100px) {
+@media all and (max-width: 2000px) and (min-width: 630px) {
   div#wrap-around ul {
-    margin-left: 1em;
-    list-style-type: square;
+    margin-left: 10em;
   }
 }
 
@@ -123,70 +132,58 @@ div#wrap-around ul {
 
 div#personal-resume {
   max-width: 960px;
+  font-family: 'Neuton', serif;
   position: relative;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 
 div#personal-resume h1 {
-  font-family: 'Neuton', serif;
-  font-size: 40px;
+  font-size: 250%;
   text-align: center;
-  max-width: 960px;
-  margin-bottom: -20px;
+  margin-bottom: -0.5em;
 }
   
 div#personal-resume p, div#technology p {
-  font-family: 'Neuton', serif;
-  font-size: 23px;
+  font-size: 140%;
   text-align: center;
-  max-width: 960px;
-  margin-left: 20px;
 }
 
-div#career-profile h2 {
+div#career-profile {
   font-family: 'Neuton', serif;
-  font-size: 30px;
   text-align: center;
   max-width: 960px;
-  margin-bottom: -20px;
+  margin-left: 2%;
+}
+div#career-profile h2 {
+  font-size: 200%;
+  margin-bottom: -0.5em;
 }
 
 div#career-profile p {
-  font-family: 'Neuton', serif;
-  font-size: 23px;
-  text-align: center;
-  max-width: 960px;
-  margin-left: 30px;
+  font-size: 140%;
 }
 
 #career-summary {
   font-family: 'Neuton', serif;
-  font-size: 30px;
-  text-align: left;
   max-width: 960px;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 
 div#career-summary h2 {
-  font-family: 'Neuton', serif;
-  font-size: 30px;
+  font-size: 200%;
   text-align: center;
-  /*font-size: 300%;*/
-  max-width: 960px;
-  margin-bottom: -25px;
+  margin-bottom: -0.5em;
 }
 
 div#career-summary ul li {
-  font-family: 'Neuton', serif;
-  font-size: 23px;
   text-align: left;
-  /*font-size: 300%;*/
-  max-width: 960px;
+  font-size: 140%;
+  list-style-type: square;
 }
 
 #work-experience {
   max-width: 960px;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 
 .odd {
@@ -199,43 +196,41 @@ div#career-summary ul li {
 
 div#work-experience h2 {
   font-family: 'Neuton', serif;
-  font-size: 30px;
+  font-size: 200%;
   text-align: center;
-  /*font-size: 300%;*/
   max-width: 960px;
-  margin-bottom: -1px;
+  margin-bottom: 0.1em;
 }
 #work-experience-table {
   width: 100%;
   max-width: 960px;
   table-layout: fixed;
   border-collapse:collapse;
-  margin-left: 20px;
 }
 .company-name {
   font-family: 'Neuton', serif;
-  font-size: 25px;
+  font-size: 160%;
   max-width: 960px;
   text-align: left;
   width: 100%;
 }
 .work-title {
   font-family: 'Neuton', serif;
-  font-size: 25px;
+  font-size: 160%;
   max-width: 960px;
   text-align: left;
   width: 50%;
 }
 .work-date {
   font-family: 'Neuton', serif;
-  font-size: 25px;
+  font-size: 160%;
   max-width: 960px;
   width: 50%;
   text-align: right;
 }
 .work-description {
   font-family: 'Neuton', serif;
-  font-size: 20px;
+  font-size: 140%;
   text-align: left;
   max-width: 960px;
 }
@@ -246,27 +241,26 @@ div#work-experience h2 {
 
 div#technology {
   font-family: 'Neuton', serif;
-  font-size: 20px;
   text-align: left;
   max-width: 960px;
-  margin-left: 20px;
+  margin-left: 2%;
+}
+
+div#education, div#patents {
+  font-family: 'Neuton', serif;
+  text-align: center;
+  max-width: 960px;
+  margin-left: 2%;
 }
 
 div#patents h2, div#education h2, div#technology h2 {
-  font-family: 'Neuton', serif;
-  font-size: 30px;
-  max-width: 960px;
+  font-size: 200%;
   text-align: center;
-  margin-left: 20px;
-  margin-bottom: -20px;
+  margin-bottom: -0.5em;
 }
 div#patents ul li, div#education ul li {
-  font-family: 'Neuton', serif;
-  font-size: 23px;
-  text-align: center;
-  max-width: 960px;
+  font-size: 140%;
   list-style-type: none;
-  margin-left: 20px;
 }
 
 /****************************************************
@@ -279,30 +273,28 @@ body#national-parks-body {
 
 div#national-parks h1 {
   font-family: 'Neuton', serif;
-  font-size: 40px;
+  font-size: 250%;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 4%;
 }
 
 
 #national-parks-table {
-  border: 3px groove black;
+  border: 3px ridge black;
   text-align: center;
   width: 100%;
   max-width: 960px;
   border-collapse:collapse;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: 4%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 div#national-parks th {
   border: 7px ridge black;
-  text-align: center;
   font-family: 'Neuton', sans-serif;
-  font-size: 30px;
-  height: 60px;
-  max-width: 960px;
+  font-size: 180%;
   background-color: #c88737;
   color: black;
 }
@@ -310,17 +302,14 @@ div#national-parks th {
 div#national-parks td {
   border: 7px ridge black;
   font-family: 'Neuton', sans-serif;
-  font-size: 23px;
-  text-align: center;
+  font-size: 140%;
   background-color: #deb887;
-  max-width: 960px;
   color: black;
 }
 
 
 div#national-parks tr:hover td{
-  background-color: #f0e68c; /* powderblue */
-  /*border: 2px solid black;*/
+  background-color: #f0e68c; 
   color: black;
 }
 
