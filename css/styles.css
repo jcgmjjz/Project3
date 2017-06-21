@@ -287,6 +287,10 @@ body#national-parks-body {
   background-color: #f0e68c;
 }
 
+div#national-parks {
+  width: 960px;
+}
+
 div#national-parks h1 {
   font-family: 'Neuton', serif;
   font-size: 250%;
