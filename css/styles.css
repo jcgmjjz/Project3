@@ -57,7 +57,7 @@ nav ul li a:hover {
 /****************************************************
  *                index                             *
  ****************************************************/
-body#index {
+body#indexfile {
   /*background-color: #f4f4d7;*/
   background-color: #afc983;
 }
@@ -82,7 +82,7 @@ h1#profession {
 
 div#wrap-around {
   /*max-width: 960px;*/
-  margin-left: 0.625em;
+  margin-left: 3%;
   font-family: 'Neuton', serif;
   font-size: 150%;
   width: 82%; 
@@ -122,18 +122,30 @@ div#wrap-around ul {
 }
 
 img#picture2 {
-  clear: both;
   float: right;
   /*margin-right: 1.25em;*/
   margin-bottom: 1.25em;
 }
 
 img#picture3 {
-  clear: both;
   float: right;
-  /*margin-right: 1.25em;*/
 }
 
+div#metal-rung {
+  float: right;
+}
+
+/* where is this margin-left coming from ??? I had to compensate to move it back. */
+div#metal-rung p {
+  /*margin-left: -6%;*/
+}
+div#chain-assisted {
+  float: right;
+}
+
+div#end {
+  float: left;
+}
 
 /****************************************************
  *                resume                            *
