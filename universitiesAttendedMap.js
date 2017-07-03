@@ -13,6 +13,8 @@ function initMap() {
   function createOneMarker(location, i){
     var marker = new google.maps.Marker({ 
       position: location,
+      //map: map;   // Leaving this commented out to allow marker
+                    // clusterer to make the association to the map
       label: labels[i % labels.length],
       animation: google.maps.Animation.DROP
     });
@@ -25,34 +27,33 @@ function initMap() {
     return(infoWindow);
   }
 
-  // The map method goes through the array locations one index at a time and calls createOneMarker
-  // for each index. Each marker is stored in the array markers.
-  //alert('crewating markers');
+  // The map method goes through the array locations one index at a time and 
+  // calls createOneMarker for each index. Each marker is stored in the
+  // array markers.
   var markers = locations.map(createOneMarker);
 
-  // The map method goes through the array contentStrings one index at a time and calls createOneInfoWindow
+  // The map method goes through the array contentStrings one index
+  // at a time and calls createOneInfoWindow
   // for each index. Each infoWindow is stored in the array infoWindows.
-  // The infoWindow at index 0 of the array infoWindows matches the marker at index 0 of the array markers.
-  //alert('creating infoWindows');
+  // The infoWindow at index 0 of the array infoWindows matches the marker
+  // at index 0 of the array markers.
   var infoWindows =  contentStrings.map(createOneInfoWindow);
 
-  // The function generateListenerCallback generates (returns) a callback function
-  // to be used for a click listener for an infoWindow marker pair.
+  // The function generateListenerCallback generates (returns) a callback
+  // function to be used for a click listener for an infoWindow marker pair.
   function generateListenerCallback( j ) {
     return function() {
       infoWindows[j].open(map, markers[j]);
     };
   }
 
-  // Go through all of the markers created and add their listener that will
+  // Go through all of the markers created and add a listener that will
   // create the infoWindow when the marker is clicked.
-  //alert('adding listerners');
   for(var j = 0; j<5; ++j){
     markers[j].addListener('click', generateListenerCallback( j ));
   }
 
-  // Add a marker clusterer to manage the markers.
-  //alert('clusterer');
+  // Add a marker clusterer to the map to manage the markers.
   var markerCluster = new MarkerClusterer(map, markers,
       {imagePath: 'imag/m'});
 
