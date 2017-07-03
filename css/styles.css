@@ -359,18 +359,34 @@ div#national-parks p {
   color: black;
 }
 
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+/*div#map {
+  height: 100%;
+}*/
+/* Optional: Makes the sample page fill the window. */
+/*html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+
+body#universityAttendedMap {
+  background-color: LightSalmon;
+}
 div#wrapper {
-width: 1050px;
-height: 600px;
-background-color: #c00;
+/*width: 1050px;
+height: 600px;*/
+height: 100%;
+background-color: LightSalmon;
 margin:0 auto;
 overflow: hidden;
 }
 
 div#map {
-width: 700px;
-height: 500px;
-background-color: #ccc;
+width: 900px;
+height: 600px;
+/*background-color: #ccc;*/
 margin: 30px auto;
 }
 
