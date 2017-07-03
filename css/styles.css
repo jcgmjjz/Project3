@@ -358,3 +358,56 @@ div#national-parks p {
   text-align: center;
   color: black;
 }
+
+div#wrapper {
+width: 1050px;
+height: 600px;
+background-color: #c00;
+margin:0 auto;
+overflow: hidden;
+}
+
+div#map {
+width: 700px;
+height: 500px;
+background-color: #ccc;
+margin: 30px auto;
+}
+
+div.university {
+  text-align: left;
+}
+
+div.university h1 {
+  font-family: 'Neuton', serif;
+  font-size: 200%;
+  margin-bottom: 0.1em;
+  margin-top: 0.1em;
+}
+
+div.university p {
+  font-family: 'Neuton', serif;
+  font-size: 140%;
+  margin-bottom: 0.1em;
+  margin-top: -0.2em;
+}
+
+div#udm { 
+  color: DarkBlue;
+}
+
+div#uiuc { 
+  color: DarkOrange;
+}
+
+div#bu { 
+  color: DarkRed;
+}
+
+div#iit { 
+  color: DarkRed;
+}
+
+div#du { 
+  color: Blue;
+}
